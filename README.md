@@ -13,7 +13,7 @@ Task Creator is a simple task management application built using React and Sass.
 
 ## Installation
 
-1. Clone the repository: `git clone <repository-url>`
+1. Clone the repository: `git clone PedroHAMartins/to-do-list`
 2. Navigate to the project directory: `cd task-creator`
 3. Install the dependencies: `npm install`
 
