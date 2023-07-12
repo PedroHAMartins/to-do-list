@@ -1,0 +1,230 @@
+@use '../abstract/_variables'
+
+@media screen and (min-width: 1200px)
+
+    .tasks
+        height: 100dvh
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+
+        .credits
+            margin: 0.5em 0
+
+            a
+                text-decoration: none
+                color: white
+
+                &:visited
+                    color: white
+
+        .register__container
+            border: 1px solid black
+            border-radius: 25px
+            width: 50%
+            height: 30%
+            background-color: variables.$light
+
+            .register__form
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                height: 100%
+                gap: 1em
+
+                input
+                    width: 50%
+                    padding: 1em
+                    border: 1px solid black
+                    border-radius: 10px
+                    margin-top: 1em
+
+                .register__description
+                    width: 50%
+                    padding: 1em
+                    border: 1px solid black
+                    border-radius: 10px
+                    resize: none
+
+                button
+                    width: 15%
+                    padding: 0.5em
+                    margin-bottom: 1em
+                    border: none
+                    border-radius: 10px
+                    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(39,31,48,1) 50%, #063742 100%)
+                    color: white
+                    cursor: pointer
+
+        .tasks__container
+            width: 50%
+            overflow: scroll
+            overflow-x: hidden
+            -ms-overflow-style: none
+            scrollbar-width: none
+            color: black
+
+            &::-webkit-scrollbar
+                display: none
+
+            .tasks__item
+                margin: 3em 0
+                display: grid
+                grid-template-columns: 0.4fr 1fr 0.1fr
+                gap: 1em
+                border: 1px solid black
+                border-radius: 25px
+                height: 10em
+                padding: 1em
+                background-color: variables.$light     
+
+                h3
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    -ms-overflow-style: none
+                    scrollbar-width: none
+                    font-size: 1.2em
+                    font-weight: 500
+
+                    &::-webkit-scrollbar
+                        display: none
+                        
+                p    
+                    overflow-y: auto
+                    line-break: anywhere
+                    -ms-overflow-style: none
+                    scrollbar-width: none
+                    border: 1px solid variables.$light-border
+                    border-radius: 10px
+                    padding: 1em
+
+                    &::-webkit-scrollbar
+                        display: none
+
+                .delete
+                    font-size: 2em
+                    cursor: pointer
+                    height: 100%
+                    transition: all 0.2s
+
+                    &:hover
+                        font-size: 2.2em
+                        margin-left: -2%
+
+@media screen and (max-width: 1200px)  
+
+    .tasks
+        height: 100dvh
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+
+        .credits
+            margin: 0.5em 0
+
+            a
+                text-decoration: none
+                color: white
+
+                &:visited
+                    color: white
+
+        .register__container
+            border: 1px solid black
+            border-radius: 25px
+            width: 90%
+            height: 30%
+            background-color: variables.$light
+
+            .register__form
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                height: 100%
+                gap: 1em
+
+                input
+                    width: 90%
+                    padding: 1em
+                    border: 1px solid black
+                    border-radius: 10px
+                    margin-top: 1em
+
+                .register__description
+                    width: 90%
+                    padding: 1em
+                    border: 1px solid black
+                    border-radius: 10px
+                    resize: none
+
+                button
+                    width: 50%
+                    padding: 0.5em
+                    margin-bottom: 1em
+                    border: none
+                    border-radius: 10px
+                    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(39,31,48,1) 50%, #063742 100%)
+                    color: white
+                    cursor: pointer
+
+        .tasks__container
+            width: 90%
+            overflow: scroll
+            overflow-x: hidden
+            -ms-overflow-style: none
+            scrollbar-width: none
+            color: black
+
+            &::-webkit-scrollbar
+                display: none
+
+            .tasks__item
+                margin: 3em 0
+                display: grid
+                grid-template-columns: 0.4fr 1fr 0.1fr
+                gap: 1em
+                border: 1px solid black
+                border-radius: 25px
+                height: 10em
+                padding: 1em
+                background-color: variables.$light     
+
+                h3
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    -ms-overflow-style: none
+                    scrollbar-width: none
+                    font-size: 1.2em
+                    font-weight: 500
+                    line-break: auto
+
+                    &::-webkit-scrollbar
+                        display: none
+                        
+                p    
+                    overflow-y: auto
+                    line-break: anywhere
+                    -ms-overflow-style: none
+                    scrollbar-width: none
+                    border: 1px solid variables.$light-border
+                    border-radius: 10px
+                    padding: 1em
+
+                    &::-webkit-scrollbar
+                        display: none
+
+                .delete
+                    font-size: 2em
+                    cursor: pointer
+                    height: 100%
+                    transition: all 0.2s
+
+                    &:hover
+                        font-size: 2.2em
+                        margin-left: -2%
